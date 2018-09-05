@@ -2,8 +2,7 @@
 
 ### Terraform state file
 
-#### terraform plan -var-file='../terraform.tfvars' -out=out.tfstate
-####  terraform apply "out.tfstate"
+####  terraform init
 
 #### terraform plan -var-file='../terraform.tfvars' 
 ####  terraform apply -var-file='../terraform.tfvars' 
