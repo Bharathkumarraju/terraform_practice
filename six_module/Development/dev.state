@@ -1,0 +1,34 @@
+{
+    "version": 3,
+    "terraform_version": "0.11.8",
+    "serial": 2,
+    "lineage": "a8f26676-cd8e-0fef-f645-924763fae9ce",
+    "modules": [
+        {
+            "path": [
+                "root"
+            ],
+            "outputs": {},
+            "resources": {},
+            "depends_on": []
+        },
+        {
+            "path": [
+                "root",
+                "bucket"
+            ],
+            "outputs": {},
+            "resources": {},
+            "depends_on": []
+        },
+        {
+            "path": [
+                "root",
+                "vpc"
+            ],
+            "outputs": {},
+            "resources": {},
+            "depends_on": []
+        }
+    ]
+}
