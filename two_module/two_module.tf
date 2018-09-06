@@ -170,9 +170,9 @@ resource "aws_elb" "web" {
 
   "listener" {
     instance_port = 80
-    instance_protocol = "tcp"
+    instance_protocol = "http"
     lb_port = 80
-    lb_protocol = "tcp"
+    lb_protocol = "http"
   }
 }
 
@@ -221,6 +221,7 @@ resource "aws_instance" "nginx2" {
   provisioner "remote-exec" {
 
     inline = ["sudo yum install nginx -y", "sudo service nginx start", "echo '<html><h1>nginx2</h1></html>'|sudo tee  /usr/share/nginx/html/index.html"]
+
   }
 
 }
